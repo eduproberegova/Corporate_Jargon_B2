@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F8395A">
+  <meta property="og:image" content="og-image.jpg">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <title>Page Not Found | @eduproberegova</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --fuchsia: #F8395A;
+      --blue: #B3D1ED;
+      --deep-blue: #6fa8d6;
+      --ink: #1f2530;
+      --muted: #697386;
+      --line: #edf0f5;
+      --shadow: 0 24px 70px rgba(31, 37, 48, .12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: #ffffff;
+      color: var(--ink);
+      font-family: "Manrope", system-ui, sans-serif;
+      user-select: none;
+    }
+
+    body::before {
+      content: "";
+      display: block;
+      height: 10px;
+      background: linear-gradient(90deg, var(--fuchsia), var(--deep-blue));
+    }
+
+    main {
+      min-height: calc(100vh - 84px);
+      display: grid;
+      place-items: center;
+      padding: 36px 18px;
+    }
+
+    .panel {
+      width: min(720px, 100%);
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: clamp(28px, 6vw, 54px);
+      text-align: center;
+    }
+
+    img {
+      width: 94px;
+      height: 94px;
+      border-radius: 50%;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(40px, 10vw, 78px);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 18px auto 28px;
+      max-width: 480px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 22px;
+      border-radius: 999px;
+      background: var(--fuchsia);
+      color: #ffffff;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 12px 28px rgba(248, 57, 90, .24);
+    }
+
+    footer {
+      padding: 22px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="panel" aria-labelledby="not-found-title">
+      <img src="icon-192.png" alt="@eduproberegova logo">
+      <h1 id="not-found-title">404</h1>
+      <p>This lesson page is not available. Return to the main lesson and keep learning.</p>
+      <a href="corporate-jargon-b2.html">Open Lesson</a>
+    </section>
+  </main>
+  <footer>© 2026 @eduproberegova · All rights reserved</footer>
+  <script>
+    document.addEventListener("contextmenu", (event) => event.preventDefault());
+  </script>
+</body>
+</html>
